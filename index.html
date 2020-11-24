@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+    <head>
+         <meta charset="utf-8">
+         <title>A-frame test</title>
+        
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+    
+    </head>
+    
+    <body style='margin : 0px; overflow: hidden;'>
+    
+        <a-scene embedded arjs='sourcetype: webcam;'>
+
+        <a-marker-camera preset='hiro'>
+            
+           <a-box width="0.3" height="0.3" depth="0.3" position= "0 0.4 0" color="red">
+           
+              <a-animation attribute="positiom"
+                                      from="0 10 0"
+                                      to="0 0 0"
+                                      repeat="indefinite"
+                                      easing="linear"></a-animation>
+           </a-box>
+          
+            
+           </a-marker-camera> 
+            
+        </a-scene>
+        
+    </body>
+    
+</html>
