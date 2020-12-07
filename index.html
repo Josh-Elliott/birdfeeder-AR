@@ -8,10 +8,33 @@
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
   <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+  
+  <style>
+    h1{
+        font-family:;
+        font-size: 48px;
+        font-weight: 900;       
+    }  
+    
+    .overlay{
+        position: absolute;
+        z-index: 10;
+      
+        width:100%;
+        height:100%;
+       display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+          
+    }
+  </style>
 
   <body style="margin : 0px; overflow: hidden;">
-    
-    <h1>First, head to www.mysterbird.co. uk and enter the rescources tab</h1>
+    <div class="overlay">
+      
+       <h1>First, head to www.mysterbird.co. uk and enter the rescources tab</h1>
+    </div> 
     <a-scene embedded arjs="sourceType: webcam;">
 
       
